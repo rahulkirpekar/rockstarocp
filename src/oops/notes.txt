@@ -1,0 +1,94 @@
+public static void main(String[] a)
+
+public static void main(String[] args)
+public static void main(String args[])
+public static void main(String []args)
+public static void main(String [] args)
+public static void main(String...args)
+public strictfp static void main(String args[])
+public final static void main(String args[])
+public final strictfp static void main(String args[])
+public strictfp final static void main(String args[])
+
+
+
+
+Object oriented Programming Features:-
+---------------------------------------
+1) class---User Defined DataType
+
+	--dm's--variable
+	--mf's
+	--constructor
+	--instance block
+	--static block
+
+
+2) object
+3) encapsulation
+4) inheritance
+5) polymorphism
+6) abstrcation
+
+
+Type of Variable in Java
+-------------------------
+1) local variable
+
+	create inside member function---in_method
+class A
+{
+	int no4;
+	void test1()
+	{
+		int no1;
+		no1=100;
+	}//no1 delete
+
+	public static void main(String args[])
+	{
+		int no1;
+		no1=10;
+	}//no2 delete
+}
+
+2) dm's
+
+class Student
+{
+	// Data Members
+	int rno;
+	String name;
+	int std;
+
+	void main()
+	{
+		Student s= new Student();
+		// s--referencce variable
+	}// s--object---local object
+}
+
+
+
+
+3) constant varibale
+4) class level variable
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

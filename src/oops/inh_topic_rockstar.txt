@@ -1,0 +1,180 @@
+OOP's Features:-
+-----------------
+
+1) class
+2) object
+
+3) Encapsulation:-
+------------------
+
+	Data---IMP---store---object---[dm's]
+
+
+4) inheritance:- To reduce code duplication / Code Reusibility
+----------------
+
+			Type of Relation
+			----------------
+
+			1) IS-A relation	2) HAS-A relation==>Aggregation
+			----------------
+				|
+				|
+		---------------------------------------------------------
+		|						   |	
+	      class						interface--Abstrcation
+		|						   |
+  --------------------------------------		   ------------------
+    |		       |	      |			    |		    |
+1) Single	2) Multilevel	3) Hierarchical		4) Multiple	5) Hybrid(Multiple)
+
+							A(no1) B(no1)
+							|      |
+							----------
+							   C	
+	
+		Person(String name)
+		  |
+		Employee(id,salary)
+		  |
+		TechEmployee(department)
+		
+			scanData---[id,name,salary,department]
+			disp()-----[id,name,salary,department]
+
+		Employee IS-A Person[TRUE]		
+
+	
+	A--()
+	|
+	B--()
+
+	B obj;// A(),B()
+
+
+
+	Constructor---> Inheritance
+
+
+
+	this()---current class constructor
+	this. ---- current cass dm's
+
+	super()---current class-->parent constructor 
+	super.---current clas--->parent dm's
+
+
+
+
+
+
+		Person(name)
+		  |
+			Person(String name)
+			{
+			
+				this.name=name;
+			}
+		Student(rno , std )
+		  |
+			Student(int rno,String name,int std , int marks)
+			{
+				super(name);
+				this.rno = rno;
+				this.std=std;
+			}
+
+
+		SciStudent(marks)	
+
+		SciStudent(int rno,String name,int std , int marks)
+		{
+			super(rno name std);
+			this.marks = marks;
+		}
+		
+
+		
+
+
+
+
+
+
+		Employee(id,name,salary)
+		   |
+	---------------------------
+	|			|
+TechEmployee		     Manager
+dsgn			 taskallocation			
+	
+	TestApp
+		main()
+		{
+			1) TechEmp
+			2) Manager
+
+			case 1: TechEmployee t = new TechEmployee();
+				t.scanData();
+				t.dispData();
+
+			case 2: Manager m = new Manager();
+				m.scanData();
+				m.dispData();
+	
+						
+		}
+
+
+
+
+
+
+A
+	A()
+	{
+
+	}
+	
+	A(int no1)
+	{
+		this();
+		this.no1=no1;
+	}
+	
+	A(int no1,int no2)
+	{
+		this(no1);
+		this.no2=no2;
+	}
+	
+	A(int no1,int no2,int n3)
+	{
+		this(no1,no2);
+		this.no3=no3;
+	}
+		
+		
+	A obj = new A(10,20,30);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5) polymorphism
+6) abstrcation
