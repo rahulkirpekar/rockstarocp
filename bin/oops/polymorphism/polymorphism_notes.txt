@@ -1,0 +1,45 @@
+Polymorphism:- Ability to take more than one fome(method).
+--------------
+
+			Type of Polymorphism
+			---------------------
+------------------				------------------
+1) CompileTime					2) RunTime
+------------------				------------------
+==> Static Binding				==> Dynamic Binding
+==> Early Binding				==> Late Binding
+Ex:-					Ex:-
+----					----
+	===> Method Overloadding		===> Method Overridding
+	-------------------------		-------------------------	
+	SAME CLASS				ParentClass--->Childclass
+
+
+Method Overloadding:-
+---------------------
+
+	A---2 args addition---addFun(int no1,int no2)--two args
+	B---3 args addition---addFun(int no1,int no2,int no3)--three args
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+

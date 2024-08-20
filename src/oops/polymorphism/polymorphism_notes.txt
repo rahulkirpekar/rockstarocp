@@ -1,0 +1,96 @@
+Polymorphism:- Ability to take more than one fome(method).
+--------------
+
+			Type of Polymorphism
+			---------------------
+------------------				------------------
+1) CompileTime					2) RunTime
+------------------				------------------
+==> Static Binding				==> Dynamic Binding
+==> Early Binding				==> Late Binding
+Ex:-					Ex:-
+----					----
+	===> Method Overloadding		===> Method Overridding
+	-------------------------		-------------------------	
+	SAME CLASS				ParentClass--->Childclass
+
+
+Method Overloadding:-
+---------------------
+
+	A---2 args addition---addFun(int no1,int no2)--two args
+	B---3 args addition---addFun(int no1,int no2,int no3)--three args
+
+		
+
+2) RunTime Polymorphism:-
+---------------------------
+
+			Vehicle(void getSpec(){ gene spec..})
+			  |
+  ---------------------------------------------------
+  |			  |			   |
+TwVehicle	      LmvVehicle		HmvVehicle	
+void getSpec()	      void getSpec()		void getSpec()
+{		      {				{	
+  TwVehicle  		LmvVehicle			HmvVehicle
+}		      }				}
+
+
+
+CompileTime	Runtime-->JVM
+    |		    |
+-------------	-------------
+//TwVehicle tw = new TwVehicle();
+
+
+Vehicle vehicle = new TwVehicle();
+vehicle.getSpec();
+------------------------------------------------
+vehicle = new LmvVehicle();
+vehicle.getSpec();
+------------------------------------------------
+vehicle = new HmvVehicle();
+vehicle.getSpec();
+
+
+
+
+
+
+
+
+
+
+
+
+
+			Person[getBahave()]---Object
+			  |
+   -------------------------------------------------------------	
+   |			  |			  |	
+School			Org			PublicPlace
+getBahave()		getBahave()		getBahave()
+   |			  |			  |	
+Student			Employee		Citizen	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
