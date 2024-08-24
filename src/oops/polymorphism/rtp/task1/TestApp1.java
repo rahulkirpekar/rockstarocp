@@ -6,7 +6,27 @@ public class TestApp1
 {
 	public void getVehicleInfo(Vehicle vehicle) 
 	{
+		//Upcasting
 		vehicle.getSpec();
+		
+		if(vehicle instanceof TwVehicle) 
+		{
+			// Downcasting
+			TwVehicle tw = (TwVehicle)vehicle;
+			tw.getTWInfo();
+
+		}else if(vehicle instanceof LmvVehicle) 
+		{
+			// Downcasting
+			LmvVehicle lmv = (LmvVehicle)vehicle;
+			lmv.getLMVInfo();
+		}
+		else if(vehicle instanceof HmvVehicle) 
+		{
+			// Downcasting
+			HmvVehicle hmv = (HmvVehicle)vehicle;
+			hmv.getHMVInfo();
+		}
 	}
 //	public void getVehicleInfo(LmvVehicle lmv) 
 //	{

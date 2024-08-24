@@ -7,4 +7,8 @@ public class HmvVehicle extends Vehicle
 	{
 		System.out.println("HmvVehicle : getSpec()");
 	}
+	public void getHMVInfo() 
+	{
+		System.out.println("HmvVehicle : getHMVInfo()");
+	}
 }

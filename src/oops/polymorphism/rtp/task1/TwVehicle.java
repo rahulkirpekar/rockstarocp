@@ -7,4 +7,10 @@ public class TwVehicle extends Vehicle
 	{
 		System.out.println("TwVehicle : getSpec()");
 	}
+	public void getTWInfo() 
+	{
+		System.out.println("TwVehicle : getTWInfo()");
+	}
+	
+	
 }

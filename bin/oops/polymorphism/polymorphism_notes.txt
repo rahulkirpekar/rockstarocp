@@ -23,6 +23,57 @@ Method Overloadding:-
 
 		
 
+2) RunTime Polymorphism:-
+---------------------------
+
+			Vehicle(void getSpec(){ gene spec..})
+			  |
+  ---------------------------------------------------
+  |			  |			   |
+TwVehicle	      LmvVehicle		HmvVehicle	
+void getSpec()	      void getSpec()		void getSpec()
+{		      {				{	
+  TwVehicle  		LmvVehicle			HmvVehicle
+}		      }				}
+
+
+
+CompileTime	Runtime-->JVM
+    |		    |
+-------------	-------------
+//TwVehicle tw = new TwVehicle();
+
+
+Vehicle vehicle = new TwVehicle();
+vehicle.getSpec();
+------------------------------------------------
+vehicle = new LmvVehicle();
+vehicle.getSpec();
+------------------------------------------------
+vehicle = new HmvVehicle();
+vehicle.getSpec();
+
+
+
+
+
+
+
+
+
+
+
+
+
+			Person[getBahave()]---Object
+			  |
+   -------------------------------------------------------------	
+   |			  |			  |	
+School			Org			PublicPlace
+getBahave()		getBahave()		getBahave()
+   |			  |			  |	
+Student			Employee		Citizen	
+
 
 
 
