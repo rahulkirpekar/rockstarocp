@@ -1,0 +1,151 @@
+Abstrcation:- Security,Privacy
+--------------
+
+	SBI---customer----login----SBI Application
+
+		watsapp--msg
+	A------------------------>B
+----------------------
+	User
+	 |
+	Car---Gear-1,2,3,4
+----------------------
+
+
+		Vehicle(public abstract void getSpec();)
+		  |
+ -----------------------------------------
+ |		  |			| 
+TwVehicle     LmvVehicle	     HmvVehicle---abstract class
+getSpec()     getSpec()		     	              
+
+Vehicle v = null;
+
+v = new HmvVehicle();
+
+v.getSpec();
+
+		Type of Abstrcation
+		-------------------
+			|
+			|
+	------------------------------------	
+	|				|
+ 0% to 100%			     100%	
+------------------		------------------
+1) Abstract Class		2) interface
+------------------		------------------
+
+
+
+1) Abstract Class:-
+---------------------
+
+abstract class Vehicle
+{
+	// 1) Dm's
+
+	// 2) Mf's
+		1) ---> Non Abstract Method(With Defination)
+		
+		public void test1()
+		{
+		}		
+
+		2) ---> Abstract Method
+
+		public abstract void test2();
+		
+	
+
+	// 3) Constructors
+}
+
+
+
+
+
+
+
+		RbiBank(public abstract int getROI();)
+		  |
+ -----------------------------------------
+ |		  |			| 
+AxisBank	SbiBank		     KotakBank	
+getROI()	getROI()	     getROI()
+  10%		   8%			12%
+
+getAxisLoan()   getSbiLoan()        getKotakLoan()
+
+
+TestApp1
+	main()
+	{
+		
+	}
+
+2) interface(pure abstrcation):-
+------------------------------
+public abstract	interface Vehicle
+{
+	// 1) Dm's---[public static final]---constant variables
+
+	int no = 10;//// JVM---Runtime---[public static final]	
+
+
+	// 2) Mf's
+		1) Abstract Methods---[public abstract]
+
+		void test1();// JVM---Runtime---[public abstract]
+		
+		2) NonAbstract Methods
+			---> static Method[Java V8]---[Vehicle.test2();]
+			static void test2()
+			{
+
+			}	
+			---> default Method[Java V8]---[child object--->obj.test2()]
+
+			default void test3()
+			{
+				test4();
+				other code;
+				test4();
+				test4();
+				other code;
+				test4();
+				other code;
+				test4();
+				other code;
+			}
+			
+			---> private Method[Java V9]
+			private void test4()
+			{
+
+			}
+
+}	
+
+
+	class		interface		interface		class
+	 |--extends	  |--extends		   |--implements	  |---[Not Possible in Java]	
+	class		interface		class			interface
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
