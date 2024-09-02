@@ -1,0 +1,161 @@
+Single Character:-
+-------------------
+char value;
+
+	Scanner sc = new Scanner(System.in);
+
+	// 1) value = sc.next().charAt(0);//royal
+
+	// 2) value = (char)System.in.read();//A--65
+
+
+String(Multiple Characters):--
+-----------------------------
+	1) char Array
+	2) String/StringBuffer/StringBuilder(class)
+-------------------------------------------------------------------------------------
+
+		Way to operation on String type data
+		----------------------------------------
+				|
+	----------------------------------------------------
+	|						|
+----------------				----------------
+1) ImmutableWay					2) MutableWay
+----------------				----------------
+===> String(C)					===> StringBuilder(C)
+						===> StringBuffer(C)
+----------------------------------------------------------------------------------------
+1) ImmutableWay(String):-
+-------------------------
+
+	Two way to create String class Object
+	****************************************
+
+String--->[Special class + provide Immutable behaviour] 
+	-----------------------------------------------
+		|
+	1) By String Literal Way[RAM---"HEAP"-----"SCP"--->"String Constant Pool"]:-
+	---------------------------------------------------------------------------
+
+		String name1 = "royal";
+		String name2 = "royal";
+		String name3 = "techo";
+		String name4 = "Royal";
+
+				// royal techno
+		String name5 = name1 +" " + name3;
+
+
+		//             royal  " " royal	
+		String name6 = name1 +" " + name2;
+
+
+	2) By String 'new' keyword Way[RAM-----HEAP----->store into HEAP]:-
+	------------------------------------------------------------------
+	
+		String name1 = new String("royal");
+		String name2 = new String("royal");
+		String name3 = new String("techno");
+		String name4 = new String("royaltechno");
+	
+
+Object Equality:-
+-------------------
+		1) referenceWay(==)			2) valueWay
+		-----------------			-----------------
+		String name1 = new String("royal");
+		String name2 = "royal";
+		String name3 = "techo";
+		String name4 = "Royal";
+
+				// royal techno
+		String name5 = name1 +" " + name3;
+
+		//             royal  " " royal	
+		String name6 = name1 +" " + name2;
+			
+		
+		SOP(name1==name2);//false		SOP(name1.equals(name2));//true
+		SOP(name1==name3);//false		SOP(name1.equals(name3));//false
+		SOP(name2==name5);//false		SOP(name2.equals(name5));//false
+		SOP(name2==name6);//false		SOP(name2.equals(name6));//false
+		SOP(name4==name5);//false		SOP(name4.equals(name5));//false
+
+
+	
+
+Answer
+	....		....
+	....		....
+
+		1) sc.next();// Single word
+		2) sc.nextLine();// Multiple word in single line
+
+
+		charAt()
+		compareTo()--------------------equals()
+		   |				 |
+		  int				boolean
+		concat()
+		contains()
+		endsWith()
+		
+		equalsIgnoreCase()
+		format()
+		getBytes()
+		getChars()
+		indexOf()
+		intern()
+		isEmpty()
+		join()
+		lastIndexOf()
+		length()
+		replace()
+		split()
+		startsWith()
+		substring()
+		toCharArray()
+		toLowerCase()
+		toUpperCase()
+		trim()
+		valueOf()
+
+
+
+
+class A
+{
+	int no;
+}
+class B
+{
+	int no;
+	A objA = new A();
+
+	PSVM()
+	{
+		B objB = new B();
+
+		objB.objA.no1 = 10;	
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

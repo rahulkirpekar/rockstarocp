@@ -57,6 +57,10 @@ public class TestApp1
 		switch(choice)
 		{
 			case 1: TwVehicle tw = new TwVehicle();
+//					tw.test3();
+//					Vehicle.test2();
+//					tw.test4();
+					
 //					vehicle.getSpec();
 					
 					t.getVehicleInfo(tw);

@@ -1,0 +1,205 @@
+Exception:- Abnormal Scenario.
+-----------
+	Statement---1
+	Statement---2
+	Statement---3
+	Statement---4
+	Statement---5
+		raise exception---JVM Abrnoaml Terminate---->"code Crashed"
+	Statement---6
+	Statement---7
+	Statement---8
+	Statement---9
+	Statement---10
+--------------------------------------------------------------------------------------------------
+			Type of Exception
+			------------------
+-----------------------				-----------------------
+1) Checked Exception				2) UnChecked Exception
+-----------------------				-----------------------
+CompileTime---Compiler				Runtime---raise by JVM at Runtime
+--------------------------------------------------------------------------------------------------
+			Hierarchy of Exception
+			----------------------
+				Object(C)
+				   |
+				Throwable(c)
+				   |
+				Exception(C)
+				   |
+	-------------------------------------------------------------------
+	|--checked Exception						|--Unchecked Exception
+--SQLException							---RuntimeException(C)	
+--FileNotfoundException							|
+--ClassnotFoundException					--ArithmeticException
+--IOException							--NullpointerException
+...								--ArrayIndexOutofBoundException	
+								--NullpointerException
+								--NumberFormateException
+								--ClassCastException
+								--StringIndexoutofBoundException
+								....
+--------------------------------------------------------------------------------------------------
+Exception Scenarios:-
+--------------------------
+
+
+ArithmeticException:-
+-----------------------
+		int no1,no2,ans;
+		scan no1,no2
+
+		ans = no1 / no2; // 10 / 0 --ArithmeticException---raise Exception at Runtime By JVM
+
+		SOP(ans);
+							
+NullpointerException:-
+-----------------------
+	String name = null;
+	
+	SOP(name.length());//NullpointerException
+
+ArrayIndexOutofBoundException:-
+---------------------------------
+
+		int a[] = new int[5];//a[0],a[1],a[2],a[3],a[4]
+
+		a[5] = 10;// raise ArryaIndexoufofBoundException
+		
+		SOP(a[0]);	
+
+NumberFormateException:-
+-----------------------
+		String value = "a1b0";
+
+		int no = Integer.parseInt(value);// raise NumberformateException
+
+		SOP(no);// 10
+
+
+ClassCastException:-
+-----------------------
+			A
+			|
+		-----------------
+		|		|
+		B		C
+
+A obj = new B();
+
+C obj = (C)obj;// raise ClassCastException
+
+
+
+StringIndexoutofBoundException:-
+--------------------------------
+
+//	       01234 	
+String name = "royal";// 5
+
+SOP(name.charAt(name.length()));// raise StringIndexOutofBoundException
+-----------------------------------------------------------------------------------------------------
+
+Exception Handling:-
+--------------------
+
+try
+{
+
+}
+catch()
+{
+
+}
+
+finally Block:-
+---------------
+try
+{
+	// raise code--->exception 
+}catch()
+{
+	// handle
+}finally
+{
+	// compl..execute---Connection--closes(db/socket/file)
+}
+-----------------------------------------------------------
+
+throw				
+	--- raise exception for User defined Abnormal Scenario.
+
+throws
+	-- pass Exception to next function
+
+
+-----------------------------------------------------------
+
+Method Overrdding With Exception:-
+------------------------------------
+
+class A
+{
+	void test()
+	{
+	}
+}
+class B extends A
+{
+	void test() throws UnCheckedException
+	{
+	}
+}
+---------------------------------------------
+THE END---exception
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
